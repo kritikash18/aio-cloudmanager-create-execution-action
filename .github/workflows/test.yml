@@ -12,7 +12,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Run Local Action
-        uses: ../../action.yml
+        uses: ./action.yml
         with:
           CLIENTID: ${{ secrets.CM_CLIENT_ID }}
           CLIENTSECRET: ${{ secrets.CM_CLIENT_SECRET }}
