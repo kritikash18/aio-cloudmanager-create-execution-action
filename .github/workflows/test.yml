@@ -1,0 +1,23 @@
+name: Test Action
+on:
+  push:
+    branches:
+      - test_action
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Run Local Action
+        uses: ../../action.yml
+        with:
+          CLIENTID: ${{ secrets.CM_CLIENT_ID }}
+          CLIENTSECRET: ${{ secrets.CM_CLIENT_SECRET }}
+          TECHNICALACCOUNTID: ${{ secrets.CM_TA_EMAIL }}
+          IMSORGID: ${{ secrets.CM_ORG_ID }}
+          KEY: ${{ secrets.CM_PRIVATE_KEY }}
+          PIPELINEID: ${{ secrets.CM_PIPELINE_ID }}
+          PROGRAMID: ${{ secrets.CM_PROGRAM_ID }}
