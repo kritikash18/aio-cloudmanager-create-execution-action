@@ -28,6 +28,7 @@ inputs:
   oauthEnabled:
     description: 'When providing a JWT/OAuth configuration, the type of configuration'
     required: false
+    default: 'false'
 outputs:
   executionId:
     description: 'The created execution ID'

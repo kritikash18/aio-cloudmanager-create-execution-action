@@ -74,6 +74,7 @@ This action can be configured two different ways -- either in combination with [
     IMSORGID: ${{ secrets.CM_ORG_ID }}
     PIPELINEID: ${{ secrets.CM_PIPELINE_ID }}
     PROGRAMID: ${{ secrets.CM_PROGRAM_ID }}
+    OAUTHENABLED: true
 ```
 
 ### Usage with aio-apps-action

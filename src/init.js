@@ -40,7 +40,7 @@ async function initSdk (imsOrgId) {
   } else {
     core.info('creating access token using provided configuration')
 
-    const oauthEnabled = core.getInput('oauthEnabled', false)
+    const oauthEnabled = core.getInput('oauthEnabled', REQUIRED) === 'true';
 
     apiKey = core.getInput('clientId', REQUIRED)
 
