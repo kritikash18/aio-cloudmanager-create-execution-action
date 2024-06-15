@@ -42,6 +42,8 @@ async function initSdk (imsOrgId) {
 
     const oauthEnabled = core.getInput('oauthEnabled', REQUIRED) === 'true';
 
+    core.info(oauthEnabled);
+
     apiKey = core.getInput('clientId', REQUIRED)
 
     const clientSecret = core.getInput('clientSecret', REQUIRED)
