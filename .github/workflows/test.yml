@@ -21,3 +21,4 @@
            KEY: ${{ secrets.CM_PRIVATE_KEY }}
            PIPELINEID: ${{ secrets.CM_PIPELINE_ID }}
            PROGRAMID: ${{ secrets.CM_PROGRAM_ID }}
+           OAUTHENABLED: 'true'
