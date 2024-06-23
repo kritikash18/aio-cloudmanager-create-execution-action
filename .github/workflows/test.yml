@@ -16,7 +16,8 @@
          with:
            CLIENTID: ${{ secrets.CM_CLIENT_ID }}
            CLIENTSECRET: ${{ secrets.CM_CLIENT_SECRET }}
-           TECHNICALACCOUNTID: ${{ secrets.CM_TA_EMAIL }}
+           TECHNICALACCOUNTID: ${{ secrets.CM_TA_ID }}
+           TECHNICALACCOUNTEMAIL: ${{ secrets.CM_TA_EMAIL }}
            IMSORGID: ${{ secrets.CM_ORG_ID }}
            KEY: ${{ secrets.CM_PRIVATE_KEY }}
            PIPELINEID: ${{ secrets.CM_PIPELINE_ID }}
